@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <base href="/image_slider/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SID</title>
     <style>
-        
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             background-color: #D2D2D2;
             background-image:
-            repeating-linear-gradient(
-                to right, transparent 0 100px,
-                #25283b22 100px 101px
-            ),
-            repeating-linear-gradient(
-                to bottom, transparent 0 100px,
-                #25283b22 100px 101px
-            );
+                repeating-linear-gradient(
+                    to right, transparent 0 100px,
+                    #25283b22 100px 101px
+                ),
+                repeating-linear-gradient(
+                    to bottom, transparent 0 100px,
+                    #25283b22 100px 101px
+                );
         }
-        
-        body::before{
+
+        body::before {
             position: absolute;
             width: min(1400px, 90vw);
             top: 10%;
@@ -32,7 +33,7 @@
             height: 90%;
             transform: translateX(-50%);
             content: '';
-            background-image: url(model.png);
+            background-image: url("model.png");
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: top center;
@@ -70,6 +71,6 @@
             <div class="model"></div>
         </div>
     </div>
-    
+
 </body>
 </html>
